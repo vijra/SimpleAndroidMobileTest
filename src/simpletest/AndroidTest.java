@@ -19,10 +19,7 @@ import java.util.concurrent.TimeUnit;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 
 // library used to find elements (by id, class, and xpath)
 import org.openqa.selenium.By;
@@ -37,8 +34,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-// library for test methods
-import org.junit.*;
 
 public class AndroidTest {
   public static String _deviceName;
@@ -111,10 +106,9 @@ public class AndroidTest {
     // Login Submit
     clickElementById(Locators._btnLoginSubmit);
 
-
-
     do {
-        // Do activity
+        // TODO your activity
+
         // Evaluate time for first iteration
         endTime   = System.currentTimeMillis();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");

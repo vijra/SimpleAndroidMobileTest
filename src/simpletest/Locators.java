@@ -1,7 +1,6 @@
 package simpletest;
 
 public class Locators extends AndroidTest {
-
 // Authentication page
    public static String  _btnSignIn = ById("growth_prereg_fragment_sign_in_button");
 
@@ -19,6 +18,5 @@ public class Locators extends AndroidTest {
   public static String ById(String id) {
     return AndroidTest._appPackage + ":id/" + id;
   }
-
 }
 
